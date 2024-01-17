@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root,
+#docs-root,
+#root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html {
+  scroll-behavior: smooth;
+}
+
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container */
+.squeezetainer {
+  padding-inline: 5vw;
+}
+
+@media (min-width: theme("screens.lg")) {
+  .squeezetainer {
+    padding-inline: 10vw;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.glass {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+
+/* Button */
+.btn-primary {
+  padding-inline: 1.25rem;
+  padding-block: 0.625rem;
+  border-radius: 9999px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+/* Menu Button */
+.hamburger-button .hamburger {
+  transition: translate 0.7s, rotate 0.7s;
+}
+
+.hamburger-button .hamburger-close {
+  translate: 3px -3px;
+  rotate: 0.125turn;
+}
+
+.hamburger-button .line {
+  transition: 0.7s;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.hamburger-button .line-close {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
 }
