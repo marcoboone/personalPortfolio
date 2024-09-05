@@ -21,26 +21,26 @@ const HeroCard: React.FC<HeroCardProps> = ({
   rowSpan,
 }) => {
   const cardContent = (
-    <div className=" group flex flex-col justify-between h-full p-4">
+    <div className=" group flex flex-col justify-between h-full">
       <div>
-        <div className="text-3xl mb-2 ">{title}</div>
+        <div className="text-xl md:text-3xl mb-2 ">{title}</div>
         {description && <div className="text-md ">{description}</div>}
       </div>
 
-      <div className="self-end group-hover:underline">{linkName}</div>
+      <div className="text-sm md:text-md self-end group-hover:underline">{linkName}</div>
     </div>
   );
 
   return link ? (
     <Link
       href={link}
-      className={`block ${colSpan} ${rowSpan}  bg-atomwhite border-[1px] ${color} p-6 transition-colors duration-[1s] hover-pop hover:cursor-pointer relative shadow-lg text-atomblack hover:text-atomwhite`}
+      className={`block ${colSpan} ${rowSpan}  bg-atomwhite border-[1px] ${color} p-1 md:p-4 lg:p-8 transition-colors duration-[1s] hover-pop hover:cursor-pointer relative shadow-lg text-atomblack hover:text-atomwhite`}
     >
       {cardContent}
     </Link>
   ) : (
     <div
-      className={`block ${colSpan} ${rowSpan} bg-atomwhite border-[1px] ${color} p-6 relative shadow-lg text-atomblack`}
+      className={`block ${colSpan} ${rowSpan} bg-atomwhite border-[1px] ${color} p-1 md:p-4 lg:p-8 transition-colors duration-[1s] hover-pop hover:cursor-pointer relative shadow-lg text-atomblack hover:text-atomwhite`}
     >
       {cardContent}
     </div>
