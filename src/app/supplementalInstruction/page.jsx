@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 const SupplementalInstruction = () => {
   return (
-    <div className='w-screen h-screen bg-atomwhite'>
-        <div className='h-full w-full p-20 flex flex-col gap-10'>
-            <h1 className='text-6xl text-atomgreyb'>Hello and Welcome to Math 215 SI Sessions!</h1>
-            <p className='text-4xl text-atomgreyb'>My name is Marco and I will be your SI Leader for this course.</p>
+    <div className='w-screen md:h-screen bg-atomwhite'>
+        <div className='h-full w-full p-4 md:p-10 lg:p-20 flex flex-col gap-8 md:gap-10'>
+            <h1 className='text-4xl md:text-6xl text-atomgreyb'>Hello and Welcome to Math 215 SI Sessions!</h1>
+            <p className='text-2xl md:text-4xl text-atomgreyb'>My name is Marco and I will be your SI Leader for this course.</p>
             <div className = "flex flex-col gap-4">
-            <p className='text-2xl text-atomgreyb'>The sessions will be held on: Sunday from 1:00 pm to 2:30 pm</p>
-            <p className='text-2xl text-atomgreyb'>The sessions will be held at: 1372 East Hall - Central Campus</p>
+            <p className='text-lg text-atomgreyb'>The sessions will be held on: Sunday from 1:00 pm to 2:30 pm</p>
+            <p className='text-lg text-atomgreyb'>The sessions will be held at: 1372 East Hall - Central Campus</p>
             </div>
             <div className="flex flex-col gap-4">
             <div className="collapse bg-atomwhite text-atomgreyb border-2">
