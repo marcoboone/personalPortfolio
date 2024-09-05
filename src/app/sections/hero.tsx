@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="z-10  md:grid md:grid-cols-6 md:grid-rows-6 md:gap-2 md:h-full md:p-20 md:text-atomblack">
         
         <div className="col-span-2 row-span-1 p-6 text-5xl tracking-widest">
-          Hey<span className="text-atomyellow font-bold">!</span> it's <span className="text-atomblue font-bold">Marco</span>
+          Hey<span className="text-atomyellow font-bold">!</span> it&apos;s <span className="text-atomblue font-bold">Marco</span>
         </div>
 
         <HeroCard
@@ -89,7 +89,7 @@ const Hero = () => {
       {/* Grid layout for smaller screens */}
       <div className="grid grid-cols-2 grid-rows-8 gap-4 h-full p-5 text-white md:hidden">
         <div className="col-span-2 row-span-1 text-slate-500 text-3xl tracking-widest">
-          Hey, it's Marco
+          Hey, it&apos;s Marco
         </div>
         <div className="col-span-2 row-span-2 bg-red-500">Project 2</div>
         <div className="col-span-2 row-span-1 bg-green-500">Text Area 1</div>
