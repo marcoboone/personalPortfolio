@@ -92,26 +92,11 @@ const Hero = () => {
 
       {/* Grid layout for smaller screens */}
       <div className="grid grid-cols-2 grid-rows-12 gap-4 h-full p-5 text-white md:hidden">
-      <div className="text-atomblack col-span-2 row-span-1 p-6 text-3xl tracking-widest">
+        <div className="text-atomblack col-span-2 row-span-1 p-6 text-3xl tracking-widest">
           Hey<span className="text-atomyellow font-bold">!</span> it&apos;s{" "}
           <span className="text-atomblue font-bold">Marco</span>
         </div>
-        <HeroCard
-          title="About Me"
-          link="https://www.marcoboone.com"
-                 description="Will be updated soon!"
-          linkName="Coming Soon"
-          colSpan="col-span-2"
-          rowSpan="row-span-2"
-          color="hover:bg-atomgreya"
-        />
-        <HeroCard
-          title="Contact"
-          linkName="meboone@umich.edu"
-          colSpan="col-span-2"
-          rowSpan="row-span-1"
-          color="hover:bg-atomgreyb"
-        />
+
         <div className="text-atomblack col-span-2 row-span-2 rounded-[3rem] p-6  text-lg">
           {" "}
           <span className="text-atomgreen font-bold">Welcome</span> to my
@@ -121,10 +106,11 @@ const Hero = () => {
           <span className="font-bold text-atomred">engineering</span>. Click a
           link and explore!{" "}
         </div>
+
         <HeroCard
           title="Nimbl"
           link="https://www.nimbldesigns.com"
-         description="Do you need a website? Check out this company I co-founded."
+          description="Do you need a website? Check out this company I co-founded."
           linkName="learn more"
           colSpan="col-span-2"
           rowSpan="row-span-2"
@@ -133,7 +119,7 @@ const Hero = () => {
         <HeroCard
           title="Atombots"
           link="https://mdp.engin.umich.edu/research_teams/atombot-24/"
-           linkName="learn more"
+          linkName="learn more"
           description="Researching the power of stochastic processes that could enable life-like robot swarms. "
           colSpan="col-span-2"
           rowSpan="row-span-2"
@@ -147,6 +133,22 @@ const Hero = () => {
           colSpan="col-span-2"
           rowSpan="row-span-2"
           color="hover:bg-atomindigo"
+        />
+        <HeroCard
+          title="About Me"
+          link="https://www.marcoboone.com"
+          description="Will be updated soon!"
+          linkName="Coming Soon"
+          colSpan="col-span-2"
+          rowSpan="row-span-2"
+          color="hover:bg-atomgreya"
+        />
+        <HeroCard
+          title="Contact"
+          linkName="meboone@umich.edu"
+          colSpan="col-span-2"
+          rowSpan="row-span-1"
+          color="hover:bg-atomgreyb"
         />
       </div>
     </div>
