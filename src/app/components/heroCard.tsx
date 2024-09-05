@@ -34,13 +34,13 @@ const HeroCard: React.FC<HeroCardProps> = ({
   return link ? (
     <Link
       href={link}
-      className={`block ${colSpan} ${rowSpan}  bg-atomwhite border-[1px] ${color} p-1 md:p-4 lg:p-8 transition-colors duration-[1s] hover-pop hover:cursor-pointer relative shadow-lg text-atomblack hover:text-atomwhite`}
+      className={`block ${colSpan} ${rowSpan}  bg-atomwhite border-[1px] ${color}  p-4 lg:p-8 transition-colors duration-[1s] hover-pop hover:cursor-pointer relative shadow-lg text-atomblack hover:text-atomwhite`}
     >
       {cardContent}
     </Link>
   ) : (
     <div
-      className={`block ${colSpan} ${rowSpan} bg-atomwhite border-[1px] ${color} p-1 md:p-4 lg:p-8 transition-colors duration-[1s] hover-pop hover:cursor-pointer relative shadow-lg text-atomblack hover:text-atomwhite`}
+      className={`block ${colSpan} ${rowSpan} bg-atomwhite border-[1px] ${color}  p-4 lg:p-8 transition-colors duration-[1s] hover-pop hover:cursor-pointer relative shadow-lg text-atomblack hover:text-atomwhite`}
     >
       {cardContent}
     </div>
