@@ -1,0 +1,51 @@
+import React from 'react'
+import Link from 'next/link'
+
+const SupplementalInstruction = () => {
+  return (
+    <div className='w-screen h-screen bg-atomwhite'>
+        <div className='h-full w-full p-20 flex flex-col gap-10'>
+            <h1 className='text-6xl text-atomgreyb'>Hello and Welcome to Math 215 SI Sessions!</h1>
+            <p className='text-4xl text-atomgreyb'>My name is Marco and I will be your SI Leader for this course.</p>
+            <div className = "flex flex-col gap-4">
+            <p className='text-2xl text-atomgreyb'>The sessions will be held on: Sunday from 1:00 pm to 2:30 pm</p>
+            <p className='text-2xl text-atomgreyb'>The sessions will be held at: 1372 East Hall - Central Campus</p>
+            </div>
+            <div className="flex flex-col gap-4">
+            <div className="collapse bg-atomwhite text-atomgreyb border-2">
+  <input type="radio" name="my-accordion-1" defaultChecked />
+  <div className="collapse-title text-xl font-medium">Session Content</div>
+  <div className="collapse-content">
+    <Link href = "">Google Drive</Link>
+  </div>
+</div>
+<div className="collapse bg-atomwhite text-atomgreyb border-2">
+  <input type="radio" name="my-accordion-1" />
+  <div className="collapse-title text-xl font-medium">What are SI Sessions?</div>
+  <div className="collapse-content">
+    <p>
+SI sessions are supplemental instruction sessions in place for you to get familiar and practice with exam questions. The weekly agenda will consist of going over content learned and applying the concepts to exam questions in a collaborative setting. Attending these sessions is a great way to practice and ask questions in order to succeed in the class. 
+
+Please feel free to give me any feedback on these sessions! 
+</p>
+  </div>
+</div>
+<div className="collapse bg-atomwhite text-atomgreyb border-2">
+  <input type="radio" name="my-accordion-1" />
+  <div className="collapse-title text-xl font-medium">Helpful Resources</div>
+  <div className="flex flex-col collapse-content">
+    <Link href = "https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx ">Paul's Online Notes</Link>
+    <Link href = "https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html">Math Lab</Link>
+    <Link href = "https://ecas.engin.umich.edu/elc/tutoring/">Tutoring</Link>
+    <Link href = "https://ecas.engin.umich.edu/elc-si-schedule/">SI Schedule</Link>
+
+  </div>
+</div>
+</div>
+<Link href = "/" className = "text-atomgreyb hover:text-atomblack">Return to Home</Link>
+        </div>
+    </div>
+  )
+}
+
+export default SupplementalInstruction

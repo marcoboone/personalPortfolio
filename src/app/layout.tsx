@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
-import './globals.css'
-import Navbar from '@/app/navbar'
-import Footer from '@/app/footer'
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/app/navbar";
+import Footer from "@/app/footer";
 
-const montserrat = Montserrat({ subsets: ["latin"]})
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Marco Boone | Portfolio",
@@ -18,11 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
-        <Navbar></Navbar>
-        {children}
-        <Footer></Footer>
-        </body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }

@@ -15,57 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.stop-scrolling {
-  height: 100vh;
-  overflow: hidden;
+.hover-pop {
+  transition: transform 0.20s ease-in-out;
 }
 
-/* Container */
-.squeezetainer {
-  padding-inline: 5vw;
-}
-
-@media (min-width: theme("screens.lg")) {
-  .squeezetainer {
-    padding-inline: 10vw;
-  }
-}
-
-.glass {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-}
-
-
-/* Button */
-.btn-primary {
-  padding-inline: 1.25rem;
-  padding-block: 0.625rem;
-  border-radius: 9999px;
-  text-align: center;
-}
-
-.btn-primary:hover {
-  opacity: 0.8;
-}
-
-/* Menu Button */
-.hamburger-button .hamburger {
-  transition: translate 0.7s, rotate 0.7s;
-}
-
-.hamburger-button .hamburger-close {
-  translate: 3px -3px;
-  rotate: 0.125turn;
-}
-
-.hamburger-button .line {
-  transition: 0.7s;
-  stroke-dasharray: 60 31 60 300;
-}
-
-.hamburger-button .line-close {
-  stroke-dasharray: 60 105 60 300;
-  stroke-dashoffset: -90;
+.hover-pop:hover {
+  transform: scale(1.02);
 }
