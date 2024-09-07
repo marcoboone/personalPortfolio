@@ -16,9 +16,9 @@ const SupplementalInstruction = () => {
   <input type="radio" name="my-accordion-1" defaultChecked />
   <div className="collapse-title text-xl font-medium">Session Content</div>
   <div className="flex flex-col collapse-content">
-    <Link href = "https://drive.google.com/file/d/1RQVWHWlQvcOgynPZh8C-4tRGvWJiLk-Q/view?usp=drive_link">Week 1 Practice Problems</Link>
-    <Link href = "https://drive.google.com/file/d/16BSWou6FRsFD6-O4T_DlhQo-SRADSn_O/view?usp=drive_link">SOLUTIONS to Week 1 Practice Problems</Link>
-    <Link href = "https://drive.google.com/drive/folders/12Pt0F6Cl5k8LezmfKdS41UT9HTURTZ5k?usp=sharing">Google Drive</Link>
+    <Link href = "https://drive.google.com/file/d/1RQVWHWlQvcOgynPZh8C-4tRGvWJiLk-Q/view?usp=drive_link" className = "hover:text-atomblack">Week 1 Practice Problems</Link>
+    <Link href = "https://drive.google.com/file/d/16BSWou6FRsFD6-O4T_DlhQo-SRADSn_O/view?usp=drive_link" className = "hover:text-atomblack">SOLUTIONS to Week 1 Practice Problems</Link>
+    <Link href = "https://drive.google.com/drive/folders/12Pt0F6Cl5k8LezmfKdS41UT9HTURTZ5k?usp=sharing" className = "hover:text-atomblack">Google Drive</Link>
   </div>
 </div>
 <div className="collapse bg-atomwhite text-atomgreyb border-2">
@@ -36,12 +36,12 @@ Please feel free to give me any feedback on these sessions!
   <input type="radio" name="my-accordion-1" />
   <div className="collapse-title text-xl font-medium">Helpful Resources</div>
   <div className="flex flex-col collapse-content">
-    <Link href = "https://math.arizona.edu/~serinh/teaching/math215.html">Course Notes by Serin Hong</Link>
-    <Link href = "https://www.khanacademy.org/math/multivariable-calculus">Khan Academy</Link>
-    <Link href = "https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx ">Paul&apos;s Online Notes</Link>
-    <Link href = "https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html">Math Lab</Link>
-    <Link href = "https://ecas.engin.umich.edu/elc/tutoring/">Tutoring</Link>
-    <Link href = "https://ecas.engin.umich.edu/elc-si-schedule/">SI Schedule</Link>
+    <Link href = "https://math.arizona.edu/~serinh/teaching/math215.html" className = "hover:text-atomblack">Course Notes by Serin Hong</Link>
+    <Link href = "https://www.khanacademy.org/math/multivariable-calculus" className = "hover:text-atomblack">Khan Academy</Link>
+    <Link href = "https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx " className = "hover:text-atomblack">Paul&apos;s Online Notes</Link>
+    <Link href = "https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html" className = "hover:text-atomblack">Math Lab</Link>
+    <Link href = "https://ecas.engin.umich.edu/elc/tutoring/" className = "hover:text-atomblack">Tutoring</Link>
+    <Link href = "https://ecas.engin.umich.edu/elc-si-schedule/" className = "hover:text-atomblack">SI Schedule</Link>
 
   </div>
 </div>
