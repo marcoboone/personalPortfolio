@@ -15,7 +15,7 @@ const SupplementalInstruction = () => {
             <div className="collapse bg-atomwhite text-atomgreyb border-2">
   <input type="radio" name="my-accordion-1" defaultChecked />
   <div className="collapse-title text-xl font-medium">Session Content</div>
-  <div className="collapse-content">
+  <div className="flex flex-col collapse-content">
     <Link href = "https://drive.google.com/file/d/1RQVWHWlQvcOgynPZh8C-4tRGvWJiLk-Q/view?usp=drive_link">Week 1 Practice Problems</Link>
     <Link href = "https://drive.google.com/file/d/16BSWou6FRsFD6-O4T_DlhQo-SRADSn_O/view?usp=drive_link">SOLUTIONS to Week 1 Practice Problems</Link>
     <Link href = "https://drive.google.com/drive/folders/12Pt0F6Cl5k8LezmfKdS41UT9HTURTZ5k?usp=sharing">Google Drive</Link>
