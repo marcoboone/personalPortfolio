@@ -34,6 +34,8 @@ Please feel free to give me any feedback on these sessions!
   <input type="radio" name="my-accordion-1" />
   <div className="collapse-title text-xl font-medium">Helpful Resources</div>
   <div className="flex flex-col collapse-content">
+    <Link href = "https://math.arizona.edu/~serinh/teaching/math215.html">Course Notes by Serin Hong</Link>
+    <Link href = "https://www.khanacademy.org/math/multivariable-calculus">Khan Academy</Link>
     <Link href = "https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx ">Paul&apos;s Online Notes</Link>
     <Link href = "https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html">Math Lab</Link>
     <Link href = "https://ecas.engin.umich.edu/elc/tutoring/">Tutoring</Link>
