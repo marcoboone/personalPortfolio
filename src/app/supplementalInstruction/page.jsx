@@ -16,7 +16,7 @@ const SupplementalInstruction = () => {
   <input type="radio" name="my-accordion-1" defaultChecked />
   <div className="collapse-title text-xl font-medium">Session Content</div>
   <div className="collapse-content">
-    <Link href = "">Google Drive</Link>
+    <Link href = "https://drive.google.com/drive/folders/12Pt0F6Cl5k8LezmfKdS41UT9HTURTZ5k?usp=sharing">Google Drive</Link>
   </div>
 </div>
 <div className="collapse bg-atomwhite text-atomgreyb border-2">
