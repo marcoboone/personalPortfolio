@@ -39,7 +39,7 @@ Please feel free to give me any feedback on these sessions!
   <div className="collapse-title text-xl font-medium">Helpful Resources</div>
   <div className="flex flex-col collapse-content">
     <Link href = "https://math.arizona.edu/~serinh/teaching/math215.html" className = "hover:text-atomblack">Course Notes by Serin Hong</Link>
-    <Link href = "https://dept.math.lsa.umich.edu/courses/215/17exampractice/index.html" className = "hover:text-atomblack">Khan Academy</Link>
+    <Link href = "https://dept.math.lsa.umich.edu/courses/215/17exampractice/index.html" className = "hover:text-atomblack">Previous Exams</Link>
     <Link href = "https://www.khanacademy.org/math/multivariable-calculus" className = "hover:text-atomblack">Khan Academy</Link>
     <Link href = "https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx " className = "hover:text-atomblack">Paul&apos;s Online Notes</Link>
     <Link href = "https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html" className = "hover:text-atomblack">Math Lab</Link>
