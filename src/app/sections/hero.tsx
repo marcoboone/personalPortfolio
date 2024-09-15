@@ -71,7 +71,7 @@ const Hero = () => {
 
         <HeroCard
           title="Mulivariable and Vector Calculus Class Page"
-          link="/supplementalInstruction"
+          link="/si"
           description="Supplemental Instruction Leader"
           linkName="learn more"
           colSpan="col-span-2"
