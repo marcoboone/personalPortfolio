@@ -16,8 +16,10 @@ const SupplementalInstruction = () => {
   <input type="radio" name="my-accordion-1" defaultChecked />
   <div className="collapse-title text-xl font-medium">Session Content</div>
   <div className="flex flex-col collapse-content">
-    <Link href = "https://drive.google.com/file/d/1RQVWHWlQvcOgynPZh8C-4tRGvWJiLk-Q/view?usp=drive_link" className = "hover:text-atomblack">Week 1 Practice Problems</Link>
-    <Link href = "https://drive.google.com/file/d/16BSWou6FRsFD6-O4T_DlhQo-SRADSn_O/view?usp=drive_link" className = "hover:text-atomblack">SOLUTIONS to Week 1 Practice Problems</Link>
+    <Link href = "https://drive.google.com/file/d/1RQVWHWlQvcOgynPZh8C-4tRGvWJiLk-Q/view?usp=drive_link" className = "hover:text-atomblack">Week 1 P-SET</Link>
+    <Link href = "https://drive.google.com/file/d/16BSWou6FRsFD6-O4T_DlhQo-SRADSn_O/view?usp=drive_link" className = "hover:text-atomblack">Week 1 SOLUTIONS</Link>
+    <Link href = "https://drive.google.com/file/d/1x_yasExT40AdqHkMmPE-xhIl3fkJK94N/view?usp=sharing" className = "hover:text-atomblack">Week 2 P-SET</Link>
+    <Link href = "https://drive.google.com/file/d/1L2MwQf5972eToJF5LNJL8FjQbxA8Kfxi/view?usp=sharing" className = "hover:text-atomblack">Week 2 SOLUTIONS</Link>
     <Link href = "https://drive.google.com/drive/folders/12Pt0F6Cl5k8LezmfKdS41UT9HTURTZ5k?usp=sharing" className = "hover:text-atomblack">Google Drive</Link>
   </div>
 </div>
