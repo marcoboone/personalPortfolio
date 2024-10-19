@@ -19,11 +19,11 @@ const SupplementalInstruction = () => {
   <input type="radio" name="my-accordion-1" defaultChecked />
   <div className="collapse-title text-xl font-medium">Session Content</div>
   <div className="flex flex-col collapse-content">
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-IXmYfHPH1a93Pv9lK_R4wvtofhdjgdV?usp=drive_link">Week 1</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1TRzpVUhAfQPte8jxW-AYRA_CtjCD_Woe?usp=drive_link">Week 2</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1xuCvPrqWXHE6t_krGJAoPwDVVAV20NPM?usp=drive_link">Week 3</Link>
-    <Link className = "hover:text-atomblack" href = "/si">Week 4 EXAM NA</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-FCVV6Z49X1FyQACVflDNmSSaVak-NiT?usp=drive_link">Week 5</Link>
+    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-IXmYfHPH1a93Pv9lK_R4wvtofhdjgdV?usp=drive_link">SESSION 1</Link>
+    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1TRzpVUhAfQPte8jxW-AYRA_CtjCD_Woe?usp=drive_link">SESSION 2</Link>
+    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1xuCvPrqWXHE6t_krGJAoPwDVVAV20NPM?usp=drive_link">SESSION 3</Link>
+    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-FCVV6Z49X1FyQACVflDNmSSaVak-NiT?usp=drive_link">SESSION 4</Link>
+    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-I1fVgf8-Z3eevwavWAWsdYQcwBQspFC?usp=drive_link">SESSION 5</Link>
 
   </div>
 </div>
