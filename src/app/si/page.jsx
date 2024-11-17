@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import HeroCard from '../components/heroCard'
+
 
 const SupplementalInstruction = () => {
   return (
@@ -26,6 +26,7 @@ const SupplementalInstruction = () => {
     <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-I1fVgf8-Z3eevwavWAWsdYQcwBQspFC?usp=drive_link">SESSION 5</Link>
     <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1VOQf5YnKe4Y_je3AaXHJTRh_JGYkaE4z?usp=drive_link">SESSION 6</Link>
     <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-OReSTiPbNrpjSXWO1OBn-DSG0-Nnd5d?usp=drive_link">SESSION 7</Link>
+    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-Pw48btWNH19R5s5qZ5RzqVJlEtUzyLU?usp=drive_link">SESSION 8</Link>
 
   </div>
 </div>
@@ -57,8 +58,8 @@ Please feel free to give me any feedback on these sessions!
   </div>
 </div>
 </div>
-<Link href = "/" className = "text-atomgreyb hover:text-atomblack">Return to Home</Link>
         </div>
+     
     </div>
   )
 }
