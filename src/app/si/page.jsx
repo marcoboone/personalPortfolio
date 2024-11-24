@@ -27,6 +27,7 @@ const SupplementalInstruction = () => {
     <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1VOQf5YnKe4Y_je3AaXHJTRh_JGYkaE4z?usp=drive_link">SESSION 6</Link>
     <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-OReSTiPbNrpjSXWO1OBn-DSG0-Nnd5d?usp=drive_link">SESSION 7</Link>
     <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-Pw48btWNH19R5s5qZ5RzqVJlEtUzyLU?usp=drive_link">SESSION 8</Link>
+    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-ShBtwKrjP1Pxj84R4XpK_md-Xe_OI0w?usp=drive_link">SESSION 9</Link>
 
   </div>
 </div>
