@@ -27,6 +27,9 @@ const config: Config = {
         'atomlime': '#98c379', // lime
         'atomamber': '#e5c07b' // amber
        },
+       animation: {
+        'spin-slow': 'spin 3s linear infinite', // Customize the duration here
+      },
     },
   },
   plugins: [

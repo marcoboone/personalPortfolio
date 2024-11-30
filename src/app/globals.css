@@ -16,9 +16,9 @@ html {
 }
 
 .hover-pop {
-  transition: transform 0.20s ease-in-out;
+  transition: transform 0.15s ease-in-out;
 }
 
 .hover-pop:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }

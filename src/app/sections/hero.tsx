@@ -1,155 +1,131 @@
 import React from "react";
-import Tag from "@/app/components/tag";
-import HeroCard from "@/app/components/heroCard";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
+import Image from "next/image";
+import { IoLocationOutline } from "react-icons/io5";
+import { FaRobot } from "react-icons/fa";
+import { FaCodeBranch } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
+import { TbMathIntegrals } from "react-icons/tb";
+
 
 const Hero = () => {
   return (
-    <div className="md:h-screen bg-atomwhite p-10">
-      {/* Grid layout for larger screens */}
-      <div className="z-10 hidden md:grid md:grid-cols-6 md:grid-rows-6 md:gap-2 md:h-full md:p-20 md:text-atomblack">
-        <div className="col-span-2 row-span-1 p-6 text-5xl tracking-widest">
-          Hey<span className="text-atomyellow font-bold">!</span> it&apos;s{" "}
-          <span className="text-atomblue font-bold">Marco</span>
+    <div className=" bg-atomblack flex justify-center items-center md:h-screen md:py-10">
+      <div className="bg-atomblack w-5/6 md:w-4/6 grid grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 gap-6  text-atomwhite">
+{/*Main Section*/}
+        <div className = "col-span-1 md:col-span-2 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20">
+            <div className = "p-6 flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
+                    <span className = "text-4xl md:text-6xl font-bold text-atomwhite">Marco Boone</span>
+                    <p className = "text-sm">
+                        Welcome to my portfolio. Like what you see? Let&apos;s work together!
+                    </p>
+                </div>
+                
+                <div className = "flex gap-2 py-4 text-xl">
+                    <Link href = "https://github.com/marcoboone" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomred hover-pop"><FaGithub /></Link>
+                    <Link href = "https://www.linkedin.com/in/marco-boone-220200262/" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomblue hover-pop"><FaLinkedin /></Link>
+                    <Link href = "meboone@umich.edu" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomgreen hover-pop"><MdOutlineMailOutline /></Link>
+
+                </div>
+            </div>
+        </div>
+{/*About Section*/}
+        <div className="col-span-1 row-span-1 relative overflow-hidden shadow-md rounded-md border-t-[1px]  border-atomgreyb/20 ">
+           <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 bg-atomblack shadow-md rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center animate-spin-slow">
+                <span className = "text-atomwhite text-2xl font-bold">MB</span>
+            </div>
+            <div>
+            <span className = "font-bold">Hey, It&apos;s Marco</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><IoLocationOutline/></span>
+                <span>Ann Arbor, MI</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">I am a computer engineering student at the University of Michigan. In my freetime I like to make cool stuff. Check out some of my projects!</p>
+
+           </div>
+        </div>
+{/*Research Section*/}
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 bg-atomblack shadow-md shadow-atomyellow rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomyellow text-4xl font-bold"><FaRobot/></span>
+            </div>
+            <div>
+            <span className = "font-bold">Research</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Z-LAB</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">I do swarm robotics reseach with the Z-Lab at the University of Michigan.</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomyellow group-hover:animate-spin"></div>
+                <Link href = "https://z.engin.umich.edu/" className = "text-sm">Z-Lab </Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
+        </div>
+{/*Projects Section*/}
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 bg-atomblack shadow-md shadow-atomred rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomred text-4xl font-bold"><FaLaptopCode/></span>
+            </div>
+            <div>
+            <span className = "font-bold">Projects</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Cool Stuff</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">I&apos;ve got some cool projects to show off. Check them out at the link below.</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomred group-hover:animate-spin"></div>
+                <Link href = "https://github.com/marcoboone" className = "text-sm">View Projects</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
+        </div>
+{/*Education Section*/}
+        <div className = "col-span-1 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 bg-atomblack shadow-md shadow-atomblue rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomblue text-4xl font-bold"><TbMathIntegrals/></span>
+            </div>
+            <div>
+            <span className = "font-bold">Education</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Courses</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">I am an SI for MATH 215. Click the link to get to the course page.</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomblue group-hover:animate-spin"></div>
+                <Link href = "/si" className = "text-sm">Course Page</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
         </div>
 
-        <HeroCard
-          title="About Me"
-          link="https://www.marcoboone.com"
-          description="Will be updated soon!"
-          linkName="Coming Soon"
-          colSpan="col-span-2"
-          rowSpan="row-span-2"
-          color="hover:bg-atomgreya"
-        />
-        <HeroCard
-          title="Contact"
-          linkName="meboone@umich.edu"
-          colSpan="col-span-1"
-          rowSpan="row-span-2"
-          color="hover:bg-atomgreyb"
-        />
-
-        <HeroCard
-          title="Macro Tracker"
-          link="https://www.marcoboone.com"
-          description="New project? Shhhh. It's a secret."
-          linkName="Coming Soon"
-          colSpan="col-span-1"
-          rowSpan="row-span-4"
-          color="hover:bg-atomyellow"
-        />
-
-        <HeroCard
-          title="Nimbl"
-          link="https://www.nimbldesigns.com"
-          description="Do you need a website? Check out this company I co-founded."
-          linkName="learn more"
-          colSpan="col-span-2"
-          rowSpan="row-span-2"
-          color="hover:bg-atomred"
-        />
-
-        <HeroCard
-          title="Atombots"
-          link="https://mdp.engin.umich.edu/research_teams/atombot-24/"
-          linkName="learn more"
-          description="Researching the power of stochastic processes that could enable life-like robot swarms. "
-          colSpan="col-span-1"
-          rowSpan="row-span-4"
-          color="hover:bg-atomcyan"
-        />
-
-        <HeroCard
-          title="Custom Neural Nets"
-          link="https://github.com/marcoboone"
-          description="Will be updated soon!"
-          linkName="learn more"
-          colSpan="col-span-2"
-          rowSpan="row-span-2"
-          color="hover:bg-atomgreen"
-        />
-
-        <HeroCard
-          title="Mulivariable and Vector Calculus Class Page"
-          link="/si"
-          description="Supplemental Instruction Leader"
-          linkName="learn more"
-          colSpan="col-span-2"
-          rowSpan="row-span-3"
-          color="hover:bg-atomindigo"
-        />
-
-        <div className="col-span-3 row-span-2 rounded-[3rem] p-6  text-3xl">
-          {" "}
-          <span className="text-atomgreen font-bold">Welcome</span> to my
-          portfolio! I am a student at the University of{" "}
-          <span className="text-atomorange font-bold">Michigan </span>
-          studying computer{" "}
-          <span className="font-bold text-atomred">engineering</span>. Click a
-          link and explore!{" "}
-        </div>
-      </div>
-
-      {/* Grid layout for smaller screens */}
-      <div className="grid grid-cols-2 grid-rows-12 gap-4 h-full p-5 text-white md:hidden">
-        <div className="text-atomblack col-span-2 row-span-1 p-6 text-3xl tracking-widest">
-          Hey<span className="text-atomyellow font-bold">!</span> it&apos;s{" "}
-          <span className="text-atomblue font-bold">Marco</span>
-        </div>
-
-        <div className="text-atomblack col-span-2 row-span-2 rounded-[3rem] p-6  text-lg">
-          {" "}
-          <span className="text-atomgreen font-bold">Welcome</span> to my
-          portfolio! I am a student at the University of{" "}
-          <span className="text-atomorange font-bold">Michigan </span>
-          studying computer{" "}
-          <span className="font-bold text-atomred">engineering</span>. Click a
-          link and explore!{" "}
-        </div>
-
-        <HeroCard
-          title="Nimbl"
-          link="https://www.nimbldesigns.com"
-          description="Do you need a website? Check out this company I co-founded."
-          linkName="learn more"
-          colSpan="col-span-2"
-          rowSpan="row-span-2"
-          color="hover:bg-atomred"
-        />
-        <HeroCard
-          title="Atombots"
-          link="https://mdp.engin.umich.edu/research_teams/atombot-24/"
-          linkName="learn more"
-          description="Researching the power of stochastic processes that could enable life-like robot swarms. "
-          colSpan="col-span-2"
-          rowSpan="row-span-2"
-          color="hover:bg-atomcyan"
-        />
-        <HeroCard
-          title="Mulivariable and Vector Calculus Class Page"
-          link="/supplementalInstruction"
-          description="Supplemental Instruction Leader"
-          linkName="learn more"
-          colSpan="col-span-2"
-          rowSpan="row-span-2"
-          color="hover:bg-atomindigo"
-        />
-        <HeroCard
-          title="About Me"
-          link="https://www.marcoboone.com"
-          description="Will be updated soon!"
-          linkName="Coming Soon"
-          colSpan="col-span-2"
-          rowSpan="row-span-2"
-          color="hover:bg-atomgreya"
-        />
-        <HeroCard
-          title="Contact"
-          linkName="meboone@umich.edu"
-          colSpan="col-span-2"
-          rowSpan="row-span-1"
-          color="hover:bg-atomgreyb"
-        />
+      
       </div>
     </div>
   );
