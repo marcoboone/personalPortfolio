@@ -13,7 +13,7 @@ import { TbMathIntegrals } from "react-icons/tb";
 
 const Hero = () => {
   return (
-    <div className=" bg-atomblack flex justify-center items-center md:h-screen md:py-10">
+    <div className=" bg-atomblack flex justify-center items-center md:h-screen py-10">
       <div className="bg-atomblack w-5/6 md:w-4/6 grid grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 gap-6  text-atomwhite">
 {/*Main Section*/}
         <div className = "col-span-1 md:col-span-2 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20">
