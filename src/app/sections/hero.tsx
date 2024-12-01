@@ -9,21 +9,26 @@ import { FaRobot } from "react-icons/fa";
 import { FaCodeBranch } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { TbMathIntegrals } from "react-icons/tb";
+import ThemeToggle from "../components/themeToggle";
 
 
 const Hero = () => {
   return (
-    <div className=" bg-atomblack flex justify-center items-center md:h-screen py-10">
-      <div className="bg-atomblack w-5/6 md:w-4/6 grid grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 gap-6  text-atomwhite">
+    <div className=" dark:bg-atomblack bg-atomwhite flex justify-center items-center md:h-screen py-10 ">
+      <div className="dark:bg-atomblack light:bg-atomwhite w-5/6 md:w-4/6 grid grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 gap-6  text-atomblack dark:text-atomwhite ">
 {/*Main Section*/}
         <div className = "col-span-1 md:col-span-2 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20">
             <div className = "p-6 flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
-                    <span className = "text-4xl md:text-6xl font-bold text-atomwhite">Marco Boone</span>
+                    <div className = "flex justify-between items-start">
+                    <span className = "text-4xl md:text-6xl font-bold">Marco Boone</span>
+                    <ThemeToggle/>
+                    </div>
                     <p className = "text-sm">
                         Welcome to my portfolio. Like what you see? Let&apos;s work together!
                     </p>
                 </div>
+                
                 
                 <div className = "flex gap-2 py-4 text-xl">
                     <Link href = "https://github.com/marcoboone" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomred hover-pop"><FaGithub /></Link>
@@ -37,8 +42,8 @@ const Hero = () => {
         <div className="col-span-1 row-span-1 relative overflow-hidden shadow-md rounded-md border-t-[1px]  border-atomgreyb/20 ">
            <div className = "flex flex-col gap-4 p-6">
             <div className = "flex gap-4 items-center">
-            <div className = "aspect-square w-1/5 bg-atomblack shadow-md rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center animate-spin-slow">
-                <span className = "text-atomwhite text-2xl font-bold">MB</span>
+            <div className = "aspect-square w-1/5 bg-atomwhite dark:bg-atomblack shadow-md rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center animate-spin-slow">
+                <span className = " text-2xl font-bold">MB</span>
             </div>
             <div>
             <span className = "font-bold">Hey, It&apos;s Marco</span>
@@ -56,7 +61,7 @@ const Hero = () => {
         <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
         <div className = "flex flex-col gap-4 p-6">
             <div className = "flex gap-4 items-center">
-            <div className = "aspect-square w-1/5 bg-atomblack shadow-md shadow-atomyellow rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomyellow rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
                 <span className = "text-atomyellow text-4xl font-bold"><FaRobot/></span>
             </div>
             <div>
@@ -80,7 +85,7 @@ const Hero = () => {
         <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
         <div className = "flex flex-col gap-4 p-6">
             <div className = "flex gap-4 items-center">
-            <div className = "aspect-square w-1/5 bg-atomblack shadow-md shadow-atomred rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomred rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
                 <span className = "text-atomred text-4xl font-bold"><FaLaptopCode/></span>
             </div>
             <div>
@@ -104,7 +109,7 @@ const Hero = () => {
         <div className = "col-span-1 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20">
         <div className = "flex flex-col gap-4 p-6">
             <div className = "flex gap-4 items-center">
-            <div className = "aspect-square w-1/5 bg-atomblack shadow-md shadow-atomblue rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomblue rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
                 <span className = "text-atomblue text-4xl font-bold"><TbMathIntegrals/></span>
             </div>
             <div>

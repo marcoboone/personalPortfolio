@@ -6,7 +6,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Marco Boone | Portfolio",
-  description: "Personal Portfolio Website",
+  description: "Portfolio Website",
 };
 
 export default function RootLayout({
