@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Hero from "@/app/sections/hero";
+import Main from "@/app/sections/main";
 
 
 export default function Home() {
   return (
     <>
-      <Hero></Hero>
+      <Main></Main>
     </>
   );
 }

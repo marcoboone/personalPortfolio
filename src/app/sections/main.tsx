@@ -12,7 +12,7 @@ import { TbMathIntegrals } from "react-icons/tb";
 import ThemeToggle from "../components/themeToggle";
 
 
-const Hero = () => {
+const Main = () => {
   return (
     <div className=" dark:bg-atomblack bg-atomwhite flex justify-center items-center md:h-screen py-10 ">
       <div className="dark:bg-atomblack light:bg-atomwhite w-5/6 md:w-4/6 grid grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 gap-6  text-atomblack dark:text-atomwhite ">
@@ -99,7 +99,7 @@ const Hero = () => {
             <p className = "text-sm">I&apos;ve got some cool projects to show off. Check them out at the link below.</p>
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomred group-hover:animate-spin"></div>
-                <Link href = "https://github.com/marcoboone" className = "text-sm">View Projects</Link>
+                <Link href = "/projects" className = "text-sm">View Projects</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
@@ -136,4 +136,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Main;

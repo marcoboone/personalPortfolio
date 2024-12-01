@@ -1,68 +1,134 @@
 import React from 'react'
 import Link from 'next/link'
+import { FaCodeBranch } from 'react-icons/fa'   
+import { FaHome, FaInfo } from "react-icons/fa";
+import ThemeToggle from '../components/themeToggle'
+import { VscSymbolMisc } from "react-icons/vsc";
+import { PiShareNetwork } from "react-icons/pi";
+import { GrResources } from "react-icons/gr";
 
 
-const SupplementalInstruction = () => {
+
+
+const SI = () => {  
   return (
-    <div className='w-screen bg-atomwhite min-h-screen'>
-        <div className='w-full p-4 md:p-10 lg:p-20 flex flex-col gap-8 md:gap-10'>
-            <h1 className='text-4xl md:text-6xl text-atomgreyb'>Hello and Welcome to Math 215 SI Sessions!</h1>
-            <p className='text-2xl md:text-4xl text-atomgreyb'>My name is Marco and I will be your SI Leader for this course.</p>
-            <div className = "flex flex-col gap-4">
-            <p className='text-lg text-atomgreyb'>The sessions will be held on: Sunday from 1:00 pm to 2:30 pm</p>
-            <p className='text-lg text-atomgreyb'>The sessions will be held at: 1372 East Hall - Central Campus</p>
+    <div className=" dark:bg-atomblack bg-atomwhite flex justify-center items-center md:h-screen py-10 ">
+        <div className="dark:bg-atomblack light:bg-atomwhite w-5/6 md:w-4/6 grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-2 gap-6  text-atomblack dark:text-atomwhite ">
+{/*Projects Header*/}          
+        <div className = "col-span-1 md:col-span-1 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20">
+            <div className = "p-6 flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
+                    <div className = "flex justify-between items-start">
+                    <span className = "text-4xl md:text-6xl font-bold">MATH 215 SI</span>
+                    </div>
+                    <p className = "text-sm">
+                        Welcome to the Math 215 SI Page!
+                    </p>
+                </div>
+                
+                
+                <div className = "flex gap-2 py-4 text-xl">
+                    
+                    <Link href = "/" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomblack dark:shadow-atomwhite hover-pop"><FaHome/></Link>
+                    <ThemeToggle></ThemeToggle>
+                    
+
+                </div>
             </div>
-           
-
-            <div className="flex flex-col gap-4">
-            <div className="collapse bg-atomwhite text-atomgreyb border-2">
-  <input type="radio" name="my-accordion-1" defaultChecked />
-  <div className="collapse-title text-xl font-medium">Session Content</div>
-  <div className="flex flex-col collapse-content">
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-IXmYfHPH1a93Pv9lK_R4wvtofhdjgdV?usp=drive_link">SESSION 1</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1TRzpVUhAfQPte8jxW-AYRA_CtjCD_Woe?usp=drive_link">SESSION 2</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1xuCvPrqWXHE6t_krGJAoPwDVVAV20NPM?usp=drive_link">SESSION 3</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-FCVV6Z49X1FyQACVflDNmSSaVak-NiT?usp=drive_link">SESSION 4</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-I1fVgf8-Z3eevwavWAWsdYQcwBQspFC?usp=drive_link">SESSION 5</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1VOQf5YnKe4Y_je3AaXHJTRh_JGYkaE4z?usp=drive_link">SESSION 6</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-OReSTiPbNrpjSXWO1OBn-DSG0-Nnd5d?usp=drive_link">SESSION 7</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-Pw48btWNH19R5s5qZ5RzqVJlEtUzyLU?usp=drive_link">SESSION 8</Link>
-    <Link className = "hover:text-atomblack" href = "https://drive.google.com/drive/folders/1-ShBtwKrjP1Pxj84R4XpK_md-Xe_OI0w?usp=drive_link">SESSION 9</Link>
-
-  </div>
-</div>
-
-<div className="collapse bg-atomwhite text-atomgreyb border-2">
-  <input type="radio" name="my-accordion-1" />
-  <div className="collapse-title text-xl font-medium">What are SI Sessions?</div>
-  <div className="collapse-content">
-    <p>
-SI sessions are supplemental instruction sessions in place for you to get familiar and practice with exam questions. The weekly agenda will consist of going over content learned and applying the concepts to exam questions in a collaborative setting. Attending these sessions is a great way to practice and ask questions in order to succeed in the class. 
-
-Please feel free to give me any feedback on these sessions! 
-</p>
-  </div>
-</div>
-<div className="collapse bg-atomwhite text-atomgreyb border-2">
-  <input type="radio" name="my-accordion-1" />
-  <div className="collapse-title text-xl font-medium">Helpful Resources</div>
-  <div className="flex flex-col collapse-content">
-  <Link href = "https://math.arizona.edu/~serinh/teaching/math215.html" className = "hover:text-atomblack">Course Notes by Serin Hong</Link>
-  <Link href = "https://youtube.com/playlist?list=PL4C4C8A7D06566F38&si=SiuVBuEmhcdBW5SI" className = "hover:text-atomblack">MIT Lectures</Link>
-    <Link href = "https://dept.math.lsa.umich.edu/courses/215/17exampractice/index.html" className = "hover:text-atomblack">Previous Exams</Link>
-    <Link href = "https://www.khanacademy.org/math/multivariable-calculus" className = "hover:text-atomblack">Khan Academy</Link>
-    <Link href = "https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx " className = "hover:text-atomblack">Paul&apos;s Online Notes</Link>
-    <Link href = "https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html" className = "hover:text-atomblack">Math Lab</Link>
-    <Link href = "https://ecas.engin.umich.edu/elc/tutoring/" className = "hover:text-atomblack">Tutoring</Link>
-    <Link href = "https://ecas.engin.umich.edu/elc-si-schedule/" className = "hover:text-atomblack">SI Schedule</Link>
-
-  </div>
-</div>
-</div>
         </div>
-     
+        
+{/*Game Dev Projects*/}        
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-6 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomblack dark:shadow-atomwhite rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomblack dark:text-atomwhite text-4xl font-bold"><VscSymbolMisc/></span>
+            </div>
+            <div>
+            <span className = " font-bold ">Weekly Sessions</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Access Weekly Session Material</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">Click the link below to get access to all the weekly material in PDF format.</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomblack dark:bg-atomwhite group-hover:animate-spin"></div>
+                <Link href = "https://drive.google.com/drive/folders/12Pt0F6Cl5k8LezmfKdS41UT9HTURTZ5k?usp=drive_link" className = "text-sm">google drive</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+            
+           </div>
+        </div>
+{/*Resources*/} 
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomred rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomred text-4xl font-bold"><GrResources/></span>
+            </div>
+            <div>
+            <span className = "font-bold">Resources</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Useful Extra Content</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">I have compiled a list of useful additional content to help you get that A+</p>
+            <div className="dropdown">
+                <div tabIndex={0} role="button">
+                <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomred group-hover:animate-spin"></div>
+                <div className = "text-sm">Resources</div>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+                </div>
+                <ul tabIndex={0} className="dropdown-content menu bg-atomblack rounded-box z-[1] w-52 p-2 shadow">
+                    <Link href = "https://math.arizona.edu/~serinh/teaching/math215.html" className = "">Course Notes</Link>
+                    <Link href = "https://youtube.com/playlist?list=PL4C4C8A7D06566F38&si=SiuVBuEmhcdBW5SI" className = "">MIT Lectures</Link>
+                    <Link href = "https://dept.math.lsa.umich.edu/courses/215/17exampractice/index.html" className = "">Previous Exams</Link>
+                    <Link href = "https://www.khanacademy.org/math/multivariable-calculus" className = "">Khan Academy</Link>
+                    <Link href = "https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx " className = "">Paul&apos;s Online Notes</Link>
+                    <Link href = "https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html" className = "">Math Lab</Link>
+                    <Link href = "https://ecas.engin.umich.edu/elc/tutoring/" className = "">Tutoring</Link>
+                    <Link href = "https://ecas.engin.umich.edu/elc-si-schedule/" className = "">SI Schedule</Link>
+                </ul>
+                </div>
+
+           </div>
+        </div>
+{/*Info*/} 
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomblue rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomblue text-4xl font-bold"><FaInfo/></span>
+            </div>
+            <div>
+            <span className = "font-bold">More Information</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Who? What? Where?</span>
+            </span>
+            </div>
+            </div>
+            <div className = "flex flex-col">
+            <span>When: Sunday from 1:00 pm to 2:30 pm</span>
+            <span>Where: 1372 East Hall - Central Campus</span>
+            </div>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomblue group-hover:animate-spin"></div>
+                <Link href = "https://ecas.engin.umich.edu/elc-si-schedule/" className = "text-sm">SI Page</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
+        </div>
+        </div>
     </div>
   )
 }
 
-export default SupplementalInstruction
+export default SI
