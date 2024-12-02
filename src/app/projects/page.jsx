@@ -11,6 +11,8 @@ import { SiCplusplus, SiCsharp } from "react-icons/si";
 import { VscSymbolMisc } from "react-icons/vsc";
 import TechNodule  from '../components/techNodule'
 import { PiShareNetwork } from "react-icons/pi";
+import { CgGym } from "react-icons/cg";
+import { IoWaterOutline } from "react-icons/io5";
 
 
 
@@ -97,7 +99,7 @@ const Projects = () => {
         <div className = "flex flex-col gap-4 p-6">
             <div className = "flex gap-4 items-center">
             <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atompurple rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
-                <span className = "text-atompurple text-4xl font-bold">H</span>
+                <span className = "text-atompurple text-4xl font-bold"><IoWaterOutline/></span>
             </div>
             <div>
             <span className = "font-bold">Hydrip</span>
@@ -121,7 +123,7 @@ const Projects = () => {
         <div className = "flex flex-col gap-4 p-6">
             <div className = "flex gap-4 items-center">
             <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomyellow rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
-                <span className = "text-atomyellow text-3xl font-bold">BMF</span>
+                <span className = "text-atomyellow text-4xl font-bold"><CgGym/></span>
             </div>
             <div>
             <span className = "font-bold">Beastmode Fitness</span>
