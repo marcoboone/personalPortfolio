@@ -234,7 +234,7 @@ const Projects = () => {
             <p className = "text-sm">Another little platformer with some enemies to battle. Leave a comment if you enjoy!</p>
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomgreyb group-hover:animate-spin"></div>
-                <Link href = "https://play.unity.com/en/games/5e0ff1bf-3376-4806-be76-99de7c73c19e/webgl-builds" className = "text-sm">Infinte Runner</Link>
+                <Link href = "https://play.unity.com/en/games/5e0ff1bf-3376-4806-be76-99de7c73c19e/webgl-builds" className = "text-sm">Dark Series</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
