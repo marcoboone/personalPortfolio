@@ -92,6 +92,30 @@ const Projects = () => {
 
            </div>
         </div>
+{/*Hydrip Site*/} 
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atompurple rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atompurple text-4xl font-bold">n</span>
+            </div>
+            <div>
+            <span className = "font-bold">Hydrip</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Website</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">A website my brother and I collaborated on for a window-cleaning company in Austin.</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atompurple group-hover:animate-spin"></div>
+                <Link href = "https://hydripclean.com" className = "text-sm">Hydrip</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
+        </div>
 {/*Flappy Bird Ai*/} 
         <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
         <div className = "flex flex-col gap-4 p-6">
