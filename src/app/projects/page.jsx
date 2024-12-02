@@ -67,7 +67,7 @@ const Projects = () => {
                 <TechNodule color = "atomcyan" text = "Java"><FaJava/></TechNodule>
                 <TechNodule color = "atomyellow" text = "React.JS"><FaReact/></TechNodule>
                 <TechNodule color = "atompurple" text = "HTML"><FaHtml5/></TechNodule>
-                <TechNodule color = "atomgreya" text = "CSS"><FaCss3/></TechNodule>
+                <TechNodule color = "atomgreyb" text = "CSS"><FaCss3/></TechNodule>
                 <TechNodule color = "atompink" text = "Next.JS"><RiNextjsFill/></TechNodule>
             </div>
            </div>
