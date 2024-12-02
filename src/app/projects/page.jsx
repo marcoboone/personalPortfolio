@@ -14,6 +14,7 @@ import { PiShareNetwork } from "react-icons/pi";
 import { CgGym } from "react-icons/cg";
 import { IoWaterOutline } from "react-icons/io5";
 import { PiButterfly, PiPersonSimpleRun} from "react-icons/pi";
+import { LuSword } from "react-icons/lu";
 
 
 
@@ -210,6 +211,30 @@ const Projects = () => {
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atompink group-hover:animate-spin"></div>
                 <Link href = "https://play.unity.com/en/games/2087819b-9eee-41ff-b19c-04d944d99ea8/webgl-builds" className = "text-sm">Infinte Runner</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
+        </div>
+{/*Infinite Runner*/} 
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomgreyb rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomgreyb text-4xl font-bold"><LuSword/></span>
+            </div>
+            <div>
+            <span className = "font-bold">Dark Series</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Video Game</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">Another little platformer with some enemies to battle. Leave a comment if you enjoy!</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomgreyb group-hover:animate-spin"></div>
+                <Link href = "https://play.unity.com/en/games/5e0ff1bf-3376-4806-be76-99de7c73c19e/webgl-builds" className = "text-sm">Infinte Runner</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
