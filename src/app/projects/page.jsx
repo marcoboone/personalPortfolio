@@ -86,7 +86,7 @@ const Projects = () => {
             <p className = "text-sm">Interested in a website? Check out nimbl!</p>
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomgreen group-hover:animate-spin"></div>
-                <Link href = "https://nimbldesigns.com/" className = "text-sm">nimbl</Link>
+                <Link href = "https://nimbldesigns.com/" className = "text-sm">nimbldesigns.com</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
@@ -97,7 +97,7 @@ const Projects = () => {
         <div className = "flex flex-col gap-4 p-6">
             <div className = "flex gap-4 items-center">
             <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atompurple rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
-                <span className = "text-atompurple text-4xl font-bold">n</span>
+                <span className = "text-atompurple text-4xl font-bold">H</span>
             </div>
             <div>
             <span className = "font-bold">Hydrip</span>
@@ -110,7 +110,31 @@ const Projects = () => {
             <p className = "text-sm">A website my brother and I collaborated on for a window-cleaning company in Austin.</p>
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atompurple group-hover:animate-spin"></div>
-                <Link href = "https://hydripclean.com" className = "text-sm">Hydrip</Link>
+                <Link href = "https://hydripclean.com" className = "text-sm">hydripclean.com</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
+        </div>
+{/*Beastmode Site*/} 
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomyellow rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomyellow text-3xl font-bold">BMF</span>
+            </div>
+            <div>
+            <span className = "font-bold">Beastmode Fitness</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Website</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">A website I built on for a gym in Katy, TX.</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomyellow group-hover:animate-spin"></div>
+                <Link href = "https://beastmodetexas.com" className = "text-sm">beastmodetexas.com</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
