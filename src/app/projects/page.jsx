@@ -13,12 +13,13 @@ import TechNodule  from '../components/techNodule'
 import { PiShareNetwork } from "react-icons/pi";
 import { CgGym } from "react-icons/cg";
 import { IoWaterOutline } from "react-icons/io5";
+import { PiButterfly, PiPersonSimpleRun} from "react-icons/pi";
 
 
 
 const Projects = () => {
   return (
-    <div className=" dark:bg-atomblack bg-atomwhite flex justify-center items-center md:h-screen py-10 ">
+    <div className=" dark:bg-atomblack bg-atomwhite flex justify-center items-center py-10 ">
         <div className="dark:bg-atomblack light:bg-atomwhite w-5/6 md:w-4/6 grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-2 gap-6  text-atomblack dark:text-atomwhite ">
 {/*Projects Header*/}          
         <div className = "col-span-1 md:col-span-1 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20">
@@ -161,6 +162,54 @@ const Projects = () => {
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomblue group-hover:animate-spin"></div>
                 <Link href = "https://play.unity.com/en/games/7413f091-9cde-404b-ab91-11450064d8a2/webaiflappybird" className = "text-sm">AI Flappy Bird</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
+        </div>
+{/*Chaos Sim*/} 
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atomcyan rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atomcyan text-4xl font-bold"><PiButterfly/></span>
+            </div>
+            <div>
+            <span className = "font-bold">Chaos Theory</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Simulation</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">Heard of the butterfly effect? I simulated a partical undergoing chaotic motion based off of some famous differential equations called attractors.</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomcyan group-hover:animate-spin"></div>
+                <Link href = "https://play.unity.com/en/games/1e99fe7a-7372-4976-ac18-8047eb4a7d42/webgl-builds" className = "text-sm">Chaos Theory Simulation</Link>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+
+           </div>
+        </div>
+{/*Infinite Runner*/} 
+        <div className = "col-span-1 row-span-1 shadow-md border-t-[1px]  border-atomgreyb/20 rounded-md">
+        <div className = "flex flex-col gap-4 p-6">
+            <div className = "flex gap-4 items-center">
+            <div className = "aspect-square w-1/5 dark:bg-atomblack bg-atomwhite shadow-md shadow-atompink rounded-full border-t-[1px]  border-atomgreyb/20 flex justify-center items-center">
+                <span className = "text-atompink text-4xl font-bold"><PiPersonSimpleRun/></span>
+            </div>
+            <div>
+            <span className = "font-bold">Infinite Runner</span>
+            <span className = "flex gap-2 items-center text-sm">
+                <span><FaCodeBranch/></span>
+                <span>Video Game</span>
+            </span>
+            </div>
+            </div>
+            <p className = "text-sm">I made a platformer game, go comment your highscore!</p>
+            <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atompink group-hover:animate-spin"></div>
+                <Link href = "https://play.unity.com/en/games/2087819b-9eee-41ff-b19c-04d944d99ea8/webgl-builds" className = "text-sm">Infinte Runner</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
