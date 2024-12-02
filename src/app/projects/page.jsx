@@ -160,7 +160,7 @@ const Projects = () => {
             <p className = "text-sm">I trained a shallow neural network to play flappy bird. Watch the AI learn in real time using a genetic algorithm based on natural selection!</p>
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomblue group-hover:animate-spin"></div>
-                <Link href = "/projects" className = "text-sm">Link Coming Soon</Link>
+                <Link href = "https://play.unity.com/en/games/7413f091-9cde-404b-ab91-11450064d8a2/webaiflappybird" className = "text-sm">AI Flappy Bird</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
