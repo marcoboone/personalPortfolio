@@ -114,7 +114,7 @@ const SI = () => {
             </span>
             </div>
             </div>
-            <div className = "flex flex-col">
+            <div className = "flex flex-col text-sm">
             <span>When: Sunday from 1:00 pm to 2:30 pm</span>
             <span>Where: 1372 East Hall - Central Campus</span>
             </div>
