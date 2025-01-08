@@ -9,6 +9,7 @@ import { FaRobot } from "react-icons/fa";
 import { FaCodeBranch } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { TbMathIntegrals } from "react-icons/tb";
+import { MdOutlineGolfCourse } from "react-icons/md";
 import ThemeToggle from "../components/themeToggle";
 
 
@@ -34,6 +35,7 @@ const Main = () => {
                     <Link href = "https://github.com/marcoboone" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomred hover-pop"><FaGithub /></Link>
                     <Link href = "https://www.linkedin.com/in/marco-boone-220200262/" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomblue hover-pop"><FaLinkedin /></Link>
                     <Link href = "meboone@umich.edu" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomgreen hover-pop"><MdOutlineMailOutline /></Link>
+                    <Link href = "/courses" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomteal hover-pop"><MdOutlineGolfCourse /></Link>
 
                 </div>
             </div>

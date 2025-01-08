@@ -21,16 +21,19 @@ const SI = () => {
                     <div className = "flex justify-between items-start">
                     <span className = "text-4xl md:text-6xl font-bold">MATH 215 SI</span>
                     </div>
-                    <p className = "text-sm">
-                        Welcome to the Math 215 SI Page!
-                    </p>
+                    <div className = "flex flex-col text-sm">
+            <span>When: Sunday from 1:00 pm to 2:30 pm</span>
+            <span>Where: 1372 East Hall - Central Campus</span>
+            </div>
                 </div>
                 
                 
-                <div className = "flex gap-2 py-4 text-xl">
+                <div className = "flex gap-2  text-xl">
                     
                     <Link href = "/" className = "shadow-md rounded-md border-t-[1px] border-atomgreyb/20 p-2 shadow-atomblack dark:shadow-atomwhite hover-pop"><FaHome/></Link>
                     <ThemeToggle></ThemeToggle>
+                   
+
                     
 
                 </div>
@@ -107,20 +110,17 @@ const SI = () => {
                 <span className = "text-atomblue text-4xl font-bold"><FaInfo/></span>
             </div>
             <div>
-            <span className = "font-bold">More Information</span>
+            <span className = "font-bold">Course Notes</span>
             <span className = "flex gap-2 items-center text-sm">
                 <span><FaCodeBranch/></span>
-                <span>Who? What? Where?</span>
+                <span>web notebook</span>
             </span>
             </div>
             </div>
-            <div className = "flex flex-col text-sm">
-            <span>When: Sunday from 1:00 pm to 2:30 pm</span>
-            <span>Where: 1372 East Hall - Central Campus</span>
-            </div>
+            <p className = "text-sm">coming soon</p>
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomblue group-hover:animate-spin"></div>
-                <Link href = "https://ecas.engin.umich.edu/elc-si-schedule/" className = "text-sm">SI Page</Link>
+                <Link href = "/notes_math215" className = "text-sm">notes</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
