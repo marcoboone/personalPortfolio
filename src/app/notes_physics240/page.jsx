@@ -12,19 +12,20 @@ const Hero = () => {
     <div className=" dark:bg-atomblack bg-atomwhite flex justify-center items-center py-10 ">
       <div className="dark:bg-atomblack light:bg-atomwhite w-5/6 md:w-1/2 grid grid-cols-1 md:grid-cols-1  gap-6  text-atomblack dark:text-atomwhite ">
         {/*Notes Title*/}
-        <NotesTitle title="Physics 240" description="I am compiling a small textbook for Physics 240. I try to keep it simple and conversational. "></NotesTitle>
+        <NotesTitle
+          title="Physics 240"
+          description="I am compiling a small textbook for Physics 240. I try to keep it simple and conversational. "
+        ></NotesTitle>
         {/*Chapter 1*/}
-        <div className="col-span-1 md:col-span-1 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20">
-          <div className="p-6 flex flex-col gap-4">
-            <span className="text-2xl md:text-4xl font-bold">
-              Course Information
-            </span>
-            <ul>
-              <li>Professor: Dr. Dave Winn</li>
-              <li>Email: winn@umich.edu</li>
-            </ul>
-            <div className="text-sm"></div>
-          </div>
+        <div className="col-span-1 md:col-span-1 row-span-1 shadow-md rounded-md border-t-[1px]  border-atomgreyb/20 p-6 flex flex-col gap-4">
+          <span className="text-2xl md:text-4xl font-bold">
+            Course Information
+          </span>
+          <ul>
+            <li>Professor: Dr. Dave Winn</li>
+            <li>Email: winn@umich.edu</li>
+          </ul>
+          <div className="text-sm"></div>
         </div>
 
         {/*Chapter 1*/}
