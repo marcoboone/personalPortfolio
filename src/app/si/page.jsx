@@ -56,11 +56,26 @@ const SI = () => {
             </div>
             </div>
             <p className = "text-sm">Click the link below to get access to all the weekly material in PDF format.</p>
+            <div className = "flex flex-col gap-2">
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomblack dark:bg-atomwhite group-hover:animate-spin"></div>
                 <Link href = "https://drive.google.com/drive/folders/12Pt0F6Cl5k8LezmfKdS41UT9HTURTZ5k?usp=drive_link" className = "text-sm">google drive</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
+            <div className="dropdown">
+                <div tabIndex={0} role="button">
+                <div className = "group flex gap-2 items-center">
+                <div className = " rounded-sm w-[10px] h-[10px] bg-atomcyan group-hover:animate-spin"></div>
+                <div className = "text-sm">LATEX</div>
+                <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
+            </div>
+                </div>
+                <ul tabIndex={0} className="dropdown-content menu bg-atomblack rounded-box z-[1] w-52 p-2 shadow">
+                    <Link href = "main.pdf" className = "">Week 1</Link>
+                   
+                </ul>
+                </div>
+                </div>
             
            </div>
         </div>
@@ -120,7 +135,7 @@ const SI = () => {
             <p className = "text-sm">coming soon</p>
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomblue group-hover:animate-spin"></div>
-                <Link href = "/notes_math215" className = "text-sm">notes</Link>
+                <Link href = "/si" className = "text-sm">notes</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 

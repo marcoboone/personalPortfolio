@@ -272,11 +272,20 @@ const Hero = () => {
                <li ><span className = "text-atomblue">extraordinary node</span> - links 3+ circuit elements</li>
                <li ><span className = "text-atomblue">Branch</span> - the trace between two consecutive nodes
                containing one and only one element between them</li>
-               <li><span className = "text-atomblue">Path</span>any continuous sequence of branches, provided that
+               <li><span className = "text-atomblue">Path</span> - any continuous sequence of branches, provided that
                no one node is encountered more than once.</li>
                <li><span className = "text-atomblue">Loop</span> - some linking between circuit elements</li>
                <li><span className = "text-atomblue">Mesh</span> - some linking between circuit elements</li>
                <li><span className = "text-atomblue">node</span> - some linking between circuit elements</li>
+
+            </ul>
+            <span className="pl-4 text-xl md:text-xl font-bold text-gray-400">
+              ii. Circuit element relationships
+            </span>
+            <ul className="pl-8 text-sm text-gray-400">
+               <li><span className = "text-atomblue">in series</span> - two circuit elements that share an ordinary node are by definition in series. Circuit elements in series share the same current.</li>
+               <li ><span className = "text-atomblue">in parallel</span> - two circuit elements that share 2 extraordinary nodes are by definition in parallel. Ciruit elements in parallel share the same voltage</li>
+               
 
             </ul>
 
