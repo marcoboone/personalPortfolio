@@ -4,13 +4,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="relative w-full h-[100vh]">
-      <Image
-        src="/psdl_images/nanoTech.jpg"
-        layout="fill"
-        objectFit="cover"
-        alt="Image"
-      ></Image>
-      <div className="absolute w-full h-full bg-black/60 "></div>
+ <video src="/psdl_images/video.mp4" autoPlay muted loop className="absolute w-full h-full object-cover" />      <div className="absolute w-full h-full bg-black/40 "></div>
       <div className="absolute w-full h-full px-[5vw] py-[5vw] flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-8 md:gap-0">
         <div className="flex flex-col gap-2 md:w-[60%] items-center md:items-start">
           <h1 className=" bodoni-moda font-thin text-white text-3xl lg:text-7xl">

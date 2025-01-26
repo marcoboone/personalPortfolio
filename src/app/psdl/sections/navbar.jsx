@@ -11,10 +11,10 @@ const Navbar = () => {
   return (
     <nav className="px-[5vw] py-6 bg-transparent fixed w-full z-10 backdrop-blur-sm hover:bg-black/80 transition-all duration-300">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-2xl bodoni-moda tracking-widest">
+        <div className="text-white text-4xl bodoni-moda tracking-widest">
           PSDL
         </div>
-        <div className="hidden md:flex gap-8 text-sm">
+        <div className="hidden md:flex gap-8 text-xl">
           <a href="/psdl" className="text-gray-300 hover:text-white">
             Home
           </a>
