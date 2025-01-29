@@ -11,17 +11,17 @@ const MiscC = () => {
         <MiscCardC
           title="Lorem ipsum dolor sit amet "
           date="DEC 11, 2024"
-          imageSrc="/psdl_images/nanoTechC.jpg"
+          imageSrc="/nanoTechC.jpg"
         ></MiscCardC>
         <MiscCardC
           title="Lorem ipsum"
           date="OCT 11, 2023"
-          imageSrc="/psdl_images/nanoTechA.jpg"
+          imageSrc="/nanoTechA.jpg"
         ></MiscCardC>
          <MiscCardC
           title="title"
           date="OCT 11, 2025"
-          imageSrc="/psdl_images/nanoTechB.jpg"
+          imageSrc="/nanoTechB.jpg"
         ></MiscCardC>
       </div>
     </div>
