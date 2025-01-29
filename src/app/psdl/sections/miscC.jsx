@@ -18,6 +18,11 @@ const MiscC = () => {
           date="OCT 11, 2023"
           imageSrc="/nanoTechA.jpg"
         ></MiscCardC>
+          <MiscCardC
+          title="Demo"
+          date="OCT 11, 2025"
+          imageSrc="/nanoTechC.jpg"
+        ></MiscCardC>
          
       </div>
     </div>
