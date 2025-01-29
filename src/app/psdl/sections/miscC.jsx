@@ -18,11 +18,7 @@ const MiscC = () => {
           date="OCT 11, 2023"
           imageSrc="/nanoTechA.jpg"
         ></MiscCardC>
-         <MiscCardC
-          title="title"
-          date="OCT 11, 2025"
-          imageSrc="/nanoTechB.jpg"
-        ></MiscCardC>
+         
       </div>
     </div>
   );
