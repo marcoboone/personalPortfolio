@@ -73,6 +73,7 @@ const SI = () => {
                 <ul tabIndex={0} className="dropdown-content menu bg-atomblack rounded-box z-[1] w-52 p-2 shadow">
                     <Link href = "PS1.pdf" className = "">Week 1</Link>
                     <Link href = "PS2.pdf" className = "">Week 2</Link>
+                    <Link href = "PS3.pdf" className = "">Week 2</Link>
                    
                 </ul>
                 </div>

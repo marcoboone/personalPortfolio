@@ -16,7 +16,7 @@ const config: Config = {
         'atomblack': '#282c34', // blackish
         'atomred': '#e06c75', // red  
         'atomyellow': '#e5c07b', // yellow
-        'atomgreen': '#98c379', // green
+        'atomgreen': '# ', // green
         'atomteal': '#56b6c2', // purple
         'atomblue': '#61afef', // blue
         'atompurple': '#c678dd', // purple
