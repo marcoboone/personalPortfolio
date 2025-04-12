@@ -79,6 +79,7 @@ const SI = () => {
                     <Link href = "PS6.pdf" className = "">Week 6</Link>
                     <Link href = "PS7.pdf" className = "">Week 7</Link>
                     <Link href = "PS8.pdf" className = "">Week 8</Link>
+                    <Link href = "PS9.pdf" className = "">Week 9</Link>
                    
                 </ul>
                 </div>
