@@ -140,10 +140,10 @@ const SI = () => {
             </span>
             </div>
             </div>
-            <p className = "text-sm">coming soon</p>
+            <p className = "text-sm">Available NOW!</p>
             <div className = "group flex gap-2 items-center">
                 <div className = " rounded-sm w-[10px] h-[10px] bg-atomblue group-hover:animate-spin"></div>
-                <Link href = "/si" className = "text-sm">notes</Link>
+                <Link href = "textbook.pdf" className = "text-sm">notes</Link>
                 <span className = "group-hover:ml-2 transition-all duration-150 ease-in-out">&rarr;</span>
             </div>
 
